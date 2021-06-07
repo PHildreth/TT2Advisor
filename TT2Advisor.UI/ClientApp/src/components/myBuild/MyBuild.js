@@ -199,6 +199,30 @@ export class MyBuild extends Component {
                         </tbody>
                     </table>
                 </div>
+                <div>
+                    <h2>Raid Cards</h2>
+                    <table className='table table-striped' aria-labelledby="tabelLabel">
+                        <thead>
+                            <tr>
+                                <th>Stat</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                Object.keys(myBuild.raidCards).map((key, index) => {
+                                    console.log({ k: key, v: myBuild.raidCards[key], i: index });
+                                    return (
+                                        <tr key={index}>
+                                            <td>{myBuild.raidCards[key].friendlyName}</td>
+                                            <td>{myBuild.raidCards[key].level}</td>
+                                        </tr>
+                                    );
+                                })
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }

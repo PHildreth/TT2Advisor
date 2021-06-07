@@ -12,9 +12,11 @@ namespace TT2Advisor.PlayerBuild
     {
         public RaidCards(JToken raidCardsToken)
         {
-            MoonBeam = new RaidCard<MoonBeam>(raidCardsToken.SelectToken("['Moon Beam']"));
+            MoonBeam = new MoonBeam(raidCardsToken.SelectToken("['Moon Beam']"));
+            RazorWind = new RazorWind(raidCardsToken.SelectToken("['Razor Wind']"));
         }
 
-        public RaidCard<MoonBeam> MoonBeam { get; set; }
+        public MoonBeam MoonBeam { get; set; }
+        public RazorWind RazorWind { get; set; }
     }
 }

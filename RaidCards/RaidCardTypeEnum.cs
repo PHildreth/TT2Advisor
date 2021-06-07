@@ -9,5 +9,6 @@ namespace TT2Advisor.RaidCards
     public enum RaidCardTypeEnum
     {
         [Display(Name = "Moon Beam")] MoonBeam,
+        [Display(Name = "Razor Wind")] RazorWind,
     }
 }
