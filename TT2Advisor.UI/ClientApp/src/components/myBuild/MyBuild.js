@@ -124,7 +124,6 @@ export class MyBuild extends Component {
                             </tr>
                         </thead>
                         <tbody>
-
                             {
                                 Object.keys(myBuild.artifacts).map((key, index) => {
                                     console.log({ k: key, v: myBuild.artifacts[key], i: index });
@@ -136,10 +135,67 @@ export class MyBuild extends Component {
                                     );
                                 })
                             }
-
-
-
-                            
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h2>Splash Stats</h2>
+                    <table className='table table-striped' aria-labelledby="tabelLabel">
+                        <thead>
+                            <tr>
+                                <th>Stat</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Splash Damage</td>
+                                <td>{myBuild.splashStats.splashDamage}</td>
+                            </tr>
+                            <tr>
+                                <td>Base Max Splash Count</td>
+                                <td>{myBuild.splashStats.baseMaxSplashCount}</td>
+                            </tr>
+                            <tr>
+                                <td>All Splash Skip</td>
+                                <td>{myBuild.splashStats.allSplashSkip}</td>
+                            </tr>
+                            <tr>
+                                <td>Heavenly Strike Splash Count</td>
+                                <td>{myBuild.splashStats.heavenlyStrikeSplashCount}</td>
+                            </tr>
+                            <tr>
+                                <td>Lightning Burst Splash Count</td>
+                                <td>{myBuild.splashStats.lightningBurstSplashCount}</td>
+                            </tr>
+                            <tr>
+                                <td>Clan Ship Splash Count</td>
+                                <td>{myBuild.splashStats.clanShipSplashCount}</td>
+                            </tr>
+                            <tr>
+                                <td>Dagger Splash Count</td>
+                                <td>{myBuild.splashStats.daggerSplashCount}</td>
+                            </tr>
+                            <tr>
+                                <td>Heavenly Strike Splash Skip</td>
+                                <td>{myBuild.splashStats.heavenlyStrikeSplashSkip}</td>
+                            </tr>
+                            <tr>
+                                <td>Pet Splash Skip</td>
+                                <td>{myBuild.splashStats.petSplashSkip}</td>
+                            </tr>
+                            <tr>
+                                <td>Clan Ship Splash Skip</td>
+                                <td>{myBuild.splashStats.clanShipSplashSkip}</td>
+                            </tr>
+                            <tr>
+                                <td>Shadow Clone Splash Skip</td>
+                                <td>{myBuild.splashStats.shadowCloneSplashSkip}</td>
+                            </tr>
+                            <tr>
+                                <td>Dagger Splash Skip</td>
+                                <td>{myBuild.splashStats.daggerSplashSkip}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
