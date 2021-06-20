@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace TT2Advisor.Equipment
 {
-    public class EquipmentSetsRepo
+    public interface IRareEquipmentSet : IEquipmentSet
     {
+        new static EquipmentSetClassEnum EquipmentSetClass => EquipmentSetClassEnum.Rare;
     }
 }

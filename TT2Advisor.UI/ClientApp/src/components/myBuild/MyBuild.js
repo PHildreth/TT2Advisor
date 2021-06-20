@@ -1,5 +1,5 @@
 import { fn } from 'jquery';
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 export class MyBuild extends Component {
     static displayName = MyBuild.name;
@@ -119,8 +119,8 @@ export class MyBuild extends Component {
                     <table className='table table-striped' aria-labelledby="tabelLabel">
                         <thead>
                             <tr>
-                                <th>Stat</th>
-                                <th>Value</th>
+                                <th>Artifact</th>
+                                <th>Level</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -204,8 +204,8 @@ export class MyBuild extends Component {
                     <table className='table table-striped' aria-labelledby="tabelLabel">
                         <thead>
                             <tr>
-                                <th>Stat</th>
-                                <th>Value</th>
+                                <th>Card</th>
+                                <th>Level</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -223,8 +223,61 @@ export class MyBuild extends Component {
                         </tbody>
                     </table>
                 </div>
+                <div>
+                    <h2>Equipment Sets</h2>
+                    <table className='table table-striped' aria-labelledby="tabelLabel">
+                        <thead>
+                            <tr>
+                                <th>Equipment Set</th>
+                                <th>Owned?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                Object.keys(myBuild.equipmentSets).map((key, index) => {
+                                    console.log({ k: key, v: myBuild.equipmentSets[key], i: index });
+                                    let camelKey = this.camelize(key);
+                                    return (
+                                        <Fragment key={index}>
+                                            <tr key={index}>
+                                                <td>{myBuild.equipmentSets[key].name}</td>
+                                                <td>Yes</td>
+                                            </tr>
+                                            <tr key={"sword_" + index}>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{myBuild.equipmentSets[camelKey].sword.name}</td>
+                                                <td>{myBuild.equipmentSets[camelKey].sword.primaryDamageTypeFriendlyName}</td>
+                                            </tr>
+                                            <tr key={"helmet_" + index}>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{myBuild.equipmentSets[camelKey].helmet.name}</td>
+                                                <td>{myBuild.equipmentSets[camelKey].helmet.primaryDamageTypeFriendlyName}</td>
+                                            </tr>
+                                            <tr key={"armor_" + index}>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{myBuild.equipmentSets[camelKey].armor.name}</td>
+                                                <td>{myBuild.equipmentSets[camelKey].armor.primaryGoldSourceTypeFriendlyName}</td>
+                                            </tr>
+                                            <tr key={"aura_" + index}>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{myBuild.equipmentSets[camelKey].aura.name}</td>
+                                                <td>{myBuild.equipmentSets[camelKey].aura.primaryDamageTypeFriendlyName}</td>
+                                            </tr>
+                                            <tr key={"slash_" + index}>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{myBuild.equipmentSets[camelKey].slash.name}</td>
+                                                <td>{myBuild.equipmentSets[camelKey].slash.primaryDamageTypeFriendlyName}</td>
+                                            </tr>
+                                        </Fragment>
+                                    );
+                                })
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
+    }
+
+    static camelize(str) {
+        return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+            return index === 0 ? word.toLowerCase() : word.toUpperCase();
+        }).replace(/\s+/g, '');
     }
 
 

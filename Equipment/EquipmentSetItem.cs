@@ -5,8 +5,12 @@ using System.Threading.Tasks;
 
 namespace TT2Advisor.Equipment
 {
-    public class EquipmentSetItem
+    public class EquipmentSetItem : IEquipmentSetItem
     {
-        public EquipmentSetItemTypeEnum EquipmentSetItemType { get; set;}
+        public string Name { get; set; }
+        public int Level { get; set; }
+        public DamageTypeEnum PrimaryDamageType { get; set; }
+        public decimal PrimaryDamageAmount { get; set; }
+        public int PrimaryDamageAmounteLevel { get; set; }
     }
 }

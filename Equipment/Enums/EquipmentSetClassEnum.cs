@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace TT2Advisor.Equipment
 {
-    public class EquipmentSetsRepo
+    public enum EquipmentSetClassEnum
     {
+        Standard = 0,
+        Event,
+        Rare,
+        Legendary,
+        Mythic
     }
 }

@@ -5,12 +5,8 @@ using System.Threading.Tasks;
 
 namespace TT2Advisor.Equipment
 {
-    public enum EquipmentSetClassEnum
+    public interface IEventEquipmentSet : IEquipmentSet
     {
-        Mythic,
-        Legendary,
-        Rare,
-        Event,
-        Standard
+        new static EquipmentSetClassEnum EquipmentSetClass => EquipmentSetClassEnum.Event;
     }
 }
