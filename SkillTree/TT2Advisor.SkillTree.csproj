@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>TT2Advisor.SkillTree</AssemblyName>
+    <RootNamespace>TT2Advisor.SkillTree</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Knight\KnightTree.cs" />
+    <Compile Remove="Skill.cs" />
+    <Compile Remove="Warlord\WarlordTree.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Seq.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\TT2Advisor.Common.csproj" />
+    <ProjectReference Include="..\Equipment\TT2Advisor.Equipment.csproj" />
+  </ItemGroup>
+
+</Project>

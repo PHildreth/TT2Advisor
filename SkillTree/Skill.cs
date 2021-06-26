@@ -1,21 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using TT2Advisor.Common;
+using System.Text;
+using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree
 {
-    public class Skill<T> where T : ISkill
+    public class Skill : ISkill
     {
-    }
+        public Skill(int level)
+        {
+            Level = level;
+        }
 
-    public interface ISkill
-    {
-        public static SkillTreeTypeEnum SkillTree { get; }
-        public static SkillTypeEnum SkillType { get; }
-        public static int Tier { get; }
-        public static DamageTypeEnum PrimaryDamageType { get; }
+        public string Name { get; }
 
+        public string FriendlyName { get; }
+
+        public int Tier { get; }
+
+        public int Level { get; set; }
+
+        public int SPCost { get; }
     }
 }

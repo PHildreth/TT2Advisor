@@ -236,8 +236,9 @@ export class MyBuild extends Component {
                             {
                                 Object.keys(myBuild.equipmentSets).map((key, index) => {
                                     console.log({ k: key, v: myBuild.equipmentSets[key], i: index });
+
                                     let camelKey = this.camelize(key);
-                                    return (
+                                    return myBuild.equipmentSets[key] && (
                                         <Fragment key={index}>
                                             <tr key={index}>
                                                 <td>{myBuild.equipmentSets[key].name}</td>

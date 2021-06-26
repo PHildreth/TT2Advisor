@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using TT2Advisor.Import;
+using TT2Advisor.PlayerBuild;
 
 namespace TT2Advisor.UI
 {
@@ -22,6 +25,15 @@ namespace TT2Advisor.UI
         {
 
             services.AddControllersWithViews();
+            services.AddLogging(loggingBuilder =>
+            {
+                loggingBuilder.AddSeq();
+            });
+
+            services.AddTransient<IBuildRepository, BuildRepository>();
+            services.AddTransient<IBuildService, BuildService>();
+            services.AddTransient<IImportRepository, ImportRepository>();
+            services.AddTransient<IImportService, ImportService>();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

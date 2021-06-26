@@ -2,9 +2,7 @@
 {
     public interface IEquipmentSet
     {
-        static IEquipmentSet() { }
-
-        public string Name { get; set; }
+        public string Name { get; }
         public string FriendlyName { get; }
         public bool Owned { get; set; }
 

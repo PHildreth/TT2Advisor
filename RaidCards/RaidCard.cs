@@ -3,29 +3,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Helpers;
+using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.RaidCards
 {
-    public interface IRaidCard
-    {
-        static IRaidCard()
-        {
-
-        }
-
-        public RaidCardTypeEnum RaidCardType { get; }
-        public int Level { get; }
-        public int Cards { get; }
-        public static string FriendlyName { get; }
-    }
-
     public class RaidCard : IRaidCard
     {
-        public RaidCard(JToken raidCardToken)
+        public RaidCard(IRaidCard raidCard)
         {
-            Level = (int)raidCardToken.SelectToken("level");
-            Cards = (int)raidCardToken.SelectToken("cards");
+            Level = raidCard.Level;
+            Cards = raidCard.Cards;
         }
         public RaidCardTypeEnum RaidCardType { get; internal set; }
         public int Level { get; private set; }

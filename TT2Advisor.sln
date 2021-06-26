@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artifacts", "Artifacts\Artifacts.csproj", "{ABCAB845-2DEE-4500-B6E6-029AE1A1AF02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.Artifacts", "Artifacts\TT2Advisor.Artifacts.csproj", "{ABCAB845-2DEE-4500-B6E6-029AE1A1AF02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equipment", "Equipment\Equipment.csproj", "{E6B63A19-C8BE-4DE3-BFAA-19CC3B49E4EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.Equipment", "Equipment\TT2Advisor.Equipment.csproj", "{E6B63A19-C8BE-4DE3-BFAA-19CC3B49E4EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{0AC68187-0685-4393-B664-2BAD34E349F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pets", "Pets\Pets.csproj", "{A35E8A85-9988-4978-8255-5CBC42398AA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.Pets", "Pets\TT2Advisor.Pets.csproj", "{A35E8A85-9988-4978-8255-5CBC42398AA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaidCards", "RaidCards\RaidCards.csproj", "{5E51A219-757D-487A-83DC-9C4C6BC6E4EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.RaidCards", "RaidCards\TT2Advisor.RaidCards.csproj", "{5E51A219-757D-487A-83DC-9C4C6BC6E4EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillTree", "SkillTree\SkillTree.csproj", "{C6050CBA-521B-4925-A5E1-89192F14F471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.SkillTree", "SkillTree\TT2Advisor.SkillTree.csproj", "{C6050CBA-521B-4925-A5E1-89192F14F471}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4DAB237A-0BDD-48AD-88DC-C73D86E9129A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.Common", "Common\TT2Advisor.Common.csproj", "{4DAB237A-0BDD-48AD-88DC-C73D86E9129A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerBuild", "PlayerBuild\PlayerBuild.csproj", "{EAC41350-9F8A-4B48-8916-0E9A421DB46E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.PlayerBuild", "PlayerBuild\TT2Advisor.PlayerBuild.csproj", "{EAC41350-9F8A-4B48-8916-0E9A421DB46E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT2Advisor.UI", "TT2Advisor.UI\TT2Advisor.UI.csproj", "{F0C83587-D1C5-404A-B212-0C6B361F3BA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TT2Advisor.UI", "TT2Advisor.UI\TT2Advisor.UI.csproj", "{F0C83587-D1C5-404A-B212-0C6B361F3BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT2Advisor.Import", "Import\TT2Advisor.Import.csproj", "{C4FBC4F4-EBD3-4BF7-9838-56E3BC858207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{F0C83587-D1C5-404A-B212-0C6B361F3BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0C83587-D1C5-404A-B212-0C6B361F3BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0C83587-D1C5-404A-B212-0C6B361F3BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FBC4F4-EBD3-4BF7-9838-56E3BC858207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FBC4F4-EBD3-4BF7-9838-56E3BC858207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FBC4F4-EBD3-4BF7-9838-56E3BC858207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FBC4F4-EBD3-4BF7-9838-56E3BC858207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{C6050CBA-521B-4925-A5E1-89192F14F471} = {0AC68187-0685-4393-B664-2BAD34E349F2}
 		{4DAB237A-0BDD-48AD-88DC-C73D86E9129A} = {0AC68187-0685-4393-B664-2BAD34E349F2}
 		{EAC41350-9F8A-4B48-8916-0E9A421DB46E} = {0AC68187-0685-4393-B664-2BAD34E349F2}
+		{C4FBC4F4-EBD3-4BF7-9838-56E3BC858207} = {0AC68187-0685-4393-B664-2BAD34E349F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {578FDF07-65EA-4789-B1C9-1B16EEE27258}

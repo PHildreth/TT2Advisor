@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TT2Advisor.Common.Enums;
 
 namespace TT2Advisor.Equipment.EquipmentSets
 {
     public class TheFallenAngel : IMythicEquipmentSet
     {
-        public TheFallenAngel(string name)
+        public TheFallenAngel()
         {
-            Name = name;
             Owned = true;
 
             Sword = new Sword()
@@ -42,7 +42,7 @@ namespace TT2Advisor.Equipment.EquipmentSets
                 PrimaryDamageType = SlashDamageTypeEnum.HeavenlyStrikeDamage,
             };
         }
-        public string Name { get; set; }
+        public string Name => "TheFallenAngel";
         public string FriendlyName => "The Fallen Angel";
         public bool Owned { get; set; }
 

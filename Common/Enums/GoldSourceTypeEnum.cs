@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace TT2Advisor.Equipment
+namespace TT2Advisor.Common.Enums
 {
     public enum GoldSourceTypeEnum
     {

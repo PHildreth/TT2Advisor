@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TT2Advisor.Pets
+namespace TT2Advisor.SkillTree.Enums
 {
-    public enum PetTypeEnum
+    public enum SkillTypeEnum
     {
-        Nova,
+        KnightsValor,
+        ChivalricOrder
     }
 }

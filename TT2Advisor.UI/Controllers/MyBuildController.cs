@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
-using TT2Advisor.Artifacts;
+using TT2Advisor.Common.Interfaces;
+using TT2Advisor.Import;
 using TT2Advisor.PlayerBuild;
-using static TT2Advisor.Artifacts.ArtifactsRepo;
 
 namespace TT2Advisor.UI.Controllers
 {
@@ -17,25 +14,33 @@ namespace TT2Advisor.UI.Controllers
     [Route("[controller]")]
     public class MyBuildController : ControllerBase
     {
-
+        private readonly IBuildService _buildService;
+        private readonly IImportService _importService;
         private readonly ILogger<MyBuildController> _logger;
 
-        public MyBuildController(ILogger<MyBuildController> logger)
+        public MyBuildController(IBuildService buildService, IImportService importService, ILogger<MyBuildController> logger)
         {
+            _buildService = buildService;
+            _importService = importService;
             _logger = logger;
         }
 
         [HttpGet]
-        public Build Get()
+        [ProducesResponseType(typeof(IBuild), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public async Task<IActionResult> Get()
         {
             using var reader = new StreamReader("C:\\Users\\phild\\source\\repos\\TT2Advisor\\Common\\Deber.json");
             var rawJson = reader.ReadToEnd();
 
-            JObject json = JObject.Parse(rawJson);
+            JObject json = await _importService.ParseJson(rawJson); // JObject.Parse(rawJson);
 
-            var myBuild = new Build(json);
+            var importBuild = await _importService.ImportBuildFromJson(json); // new Build(json);
 
-            return myBuild;
+            var myBuild = await _buildService.CreateFromImport(importBuild);
+
+            return Ok(myBuild);
         }
     }
 }

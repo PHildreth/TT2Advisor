@@ -1,4 +1,6 @@
-﻿namespace TT2Advisor.Equipment
+﻿using TT2Advisor.Common.Enums;
+
+namespace TT2Advisor.Equipment
 {
     public class Helmet : IHelmet
     {

@@ -22,6 +22,6 @@ namespace TT2Advisor.Common.Helpers
                             .GetCustomAttribute<TAttribute>();
         }
 
-        public static string GetDisplayName(this Enum enumValue) => enumValue.GetAttribute<DisplayAttribute>().Name;
+        public static string GetDisplayName(this Enum enumValue) => enumValue.GetAttribute<DisplayAttribute>()?.Name ?? enumValue.ToString();
     }
 }

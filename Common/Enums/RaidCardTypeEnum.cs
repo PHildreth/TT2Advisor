@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TT2Advisor.RaidCards
+namespace TT2Advisor.Common.Enums
 {
     public enum RaidCardTypeEnum
     {

@@ -1,24 +1,24 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using TT2Advisor.Common.Interfaces;
+using TT2Advisor.Import;
 
 namespace TT2Advisor.PlayerBuild
 {
-    public class Build
+    public class Build : IBuild
     {
-        public Build(JToken buildToken)
+        public Build(ImportBuild importBuild)
         {
-            PlayerStats = new PlayerStats(buildToken.SelectToken("playerStats"));
-            RaidStats = new RaidStats(buildToken.SelectToken("raidStats"));
-            Artifacts = new Artifacts(buildToken.SelectToken("artifacts"));
-            SplashStats = new SplashStats(buildToken.SelectToken("splashStats"));
-            RaidCards = new RaidCards(buildToken.SelectToken("raidCards"));
-            EquipmentSets = new EquipmentSets(buildToken.SelectToken("equipmentSets"));
-            PassiveSkills = new PassiveSkills(buildToken.SelectToken("passiveSkills"));
-            PetLevels = new PetLevels(buildToken.SelectToken("petLevels"));
-            SkillTree = new SkillTree(buildToken.SelectToken("skillTree"));
+            PlayerStats = new PlayerStats(importBuild.PlayerStats); // new PlayerStats(buildToken.SelectToken("playerStats"));
+            RaidStats = new RaidStats(importBuild.RaidStats); // new RaidStats(buildToken.SelectToken("raidStats"));
+            Artifacts = new Artifacts(importBuild.Artifacts); // new Artifacts(buildToken.SelectToken("artifacts"));
+            SplashStats = new SplashStats(importBuild.SplashStats); // new SplashStats(buildToken.SelectToken("splashStats"));
+            RaidCards = new RaidCards(importBuild.RaidCards); // new RaidCards(buildToken.SelectToken("raidCards"));
+            EquipmentSets = new EquipmentSets(importBuild.EquipmentSets); // new EquipmentSets(buildToken.SelectToken("equipmentSets"));
+            PassiveSkills = new PassiveSkills(importBuild.PassiveSkills); // new PassiveSkills(buildToken.SelectToken("passiveSkills"));
+            PetLevels = new PetLevels(importBuild.PetLevels); // new PetLevels(buildToken.SelectToken("petLevels"));
+            SkillTree = new SkillTree(importBuild.SkillTree); // new SkillTree(buildToken.SelectToken("skillTree"));
         }
 
         public PlayerStats PlayerStats { get; set; }

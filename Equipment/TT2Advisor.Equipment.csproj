@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>TT2Advisor.Equipment</AssemblyName>
+    <RootNamespace>TT2Advisor.Equipment</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EquipmentSet.cs" />
+    <Compile Remove="EquipmentSetItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Seq.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\TT2Advisor.Common.csproj" />
+  </ItemGroup>
+
+</Project>
