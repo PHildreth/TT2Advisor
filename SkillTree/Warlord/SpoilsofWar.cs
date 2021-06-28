@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Warlord
 {
-    public class SpoilsofWar : ISkill
+    public class SpoilsofWar : Skill
     {
         public SpoilsofWar(int level)
         {

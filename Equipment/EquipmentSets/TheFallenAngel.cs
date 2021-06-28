@@ -46,11 +46,11 @@ namespace TT2Advisor.Equipment.EquipmentSets
         public string FriendlyName => "The Fallen Angel";
         public bool Owned { get; set; }
 
-        public ISword Sword { get; set; }
-        public IHelmet Helmet { get; set; }
-        public IArmor Armor { get; set; }
-        public IAura Aura { get; set; }
-        public ISlash Slash { get; set; }
+        public Sword Sword { get; set; }
+        public Helmet Helmet { get; set; }
+        public Armor Armor { get; set; }
+        public Aura Aura { get; set; }
+        public Slash Slash { get; set; }
 
         public string Bonus1 => "+5 Spells Level Cap";
         public string Bonus1Amount => "5"; // Unit

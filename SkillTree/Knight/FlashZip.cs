@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class FlashZip : ISkill
+    public class FlashZip : Skill
     {
         public FlashZip(int level)
         {

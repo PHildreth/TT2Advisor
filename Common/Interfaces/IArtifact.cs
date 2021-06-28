@@ -4,14 +4,15 @@ namespace TT2Advisor.Common.Interfaces
 {
     public interface IArtifact
     {
-        public static ArtifactTypeEnum ArtifactType { get; }
-        public string Enchanted { get; }
-        public string Level { get; }
-        public static double AllArtifactDamage { get; }
-        public static double NextAllArtifactDamage { get; }
-        public static ArtifactBonusTypeEnum BonusType { get; }
-        public static double BonusAmount { get; }
-        public static double NextBonusAmount { get; }
+        static string Name { get; set; }
+        static ArtifactTypeEnum ArtifactType { get; }
+        string Enchanted { get; }
+        string Level { get; }
+        static double AllArtifactDamage { get; }
+        static double NextAllArtifactDamage { get; }
+        static ArtifactBonusTypeEnum BonusType { get; }
+        static double BonusAmount { get; }
+        static double NextBonusAmount { get; }
         static string FriendlyName { get; }
     }
 }

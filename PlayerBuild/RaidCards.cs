@@ -19,66 +19,65 @@ namespace TT2Advisor.PlayerBuild
 
         public RaidCards(Import.RaidCards raidCards)
         {
-            MoonBeam = raidCards.MoonBeam;
-            Fragmentize = raidCards.Fragmentize;
-            SkullBash = raidCards.SkullBash;
-            RazorWind = raidCards.RazorWind;
-            WhipofLightning = raidCards.WhipofLightning;
-            ClanshipBarrage = raidCards.ClanshipBarrage;
-            PurifyingBlast = raidCards.PurifyingBlast;
-            PsychicChain = raidCards.PsychicChain;
-            FlakShot = raidCards.FlakShot;
-            CosmicHaymaker = raidCards.CosmicHaymaker;
-            BlazingInferno = raidCards.BlazingInferno;
-            AcidDrench = raidCards.AcidDrench;
-            DecayingStrike = raidCards.DecayingStrike;
-            FusionBomb = raidCards.FusionBomb;
-            GrimShadow = raidCards.GrimShadow;
-            ThrivingPlague = raidCards.ThrivingPlague;
-            Radioactivity = raidCards.Radioactivity;
-            RavenousSwarm = raidCards.RavenousSwarm;
-            Maelstrom = raidCards.Maelstrom;
-            CrushingInstinct = raidCards.CrushingInstinct;
-            InsanityVoid = raidCards.InsanityVoid;
-            RancidGas = raidCards.RancidGas;
-            InspiringForce = raidCards.InspiringForce;
-            SoulFire = raidCards.SoulFire;
-            VictoryMarch = raidCards.VictoryMarch;
-            PrismaticRift = raidCards.PrismaticRift;
-            AncestralFavor = raidCards.AncestralFavor;
-            GraspingVines = raidCards.GraspingVines;
-            TotemofPower = raidCards.TotemofPower;
-
+            MoonBeam = new MoonBeam(raidCards.MoonBeam);
+            Fragmentize = new Fragmentize(raidCards.Fragmentize);
+            SkullBash = new SkullBash(raidCards.SkullBash);
+            RazorWind = new RazorWind(raidCards.RazorWind);
+            WhipofLightning = new WhipofLightning(raidCards.WhipofLightning);
+            ClanshipBarrage = new ClanshipBarrage(raidCards.ClanshipBarrage);
+            PurifyingBlast = new PurifyingBlast(raidCards.PurifyingBlast);
+            PsychicChain = new PsychicChain(raidCards.PsychicChain);
+            FlakShot = new FlakShot(raidCards.FlakShot);
+            CosmicHaymaker = new CosmicHaymaker(raidCards.CosmicHaymaker);
+            BlazingInferno = new BlazingInferno(raidCards.BlazingInferno);
+            AcidDrench = new AcidDrench(raidCards.AcidDrench);
+            DecayingStrike = new DecayingStrike(raidCards.DecayingStrike);
+            FusionBomb = new FusionBomb(raidCards.FusionBomb);
+            GrimShadow = new GrimShadow(raidCards.GrimShadow);
+            ThrivingPlague = new ThrivingPlague(raidCards.ThrivingPlague);
+            Radioactivity = new Radioactivity(raidCards.Radioactivity);
+            RavenousSwarm = new RavenousSwarm(raidCards.RavenousSwarm);
+            Maelstrom = new Maelstrom(raidCards.Maelstrom);
+            CrushingInstinct = new CrushingInstinct(raidCards.CrushingInstinct);
+            InsanityVoid = new InsanityVoid(raidCards.InsanityVoid);
+            RancidGas = new RancidGas(raidCards.RancidGas);
+            InspiringForce = new InspiringForce(raidCards.InspiringForce);
+            SoulFire = new SoulFire(raidCards.SoulFire);
+            VictoryMarch = new VictoryMarch(raidCards.VictoryMarch);
+            PrismaticRift = new PrismaticRift(raidCards.PrismaticRift);
+            AncestralFavor = new AncestralFavor(raidCards.AncestralFavor);
+            GraspingVines = new GraspingVines(raidCards.GraspingVines);
+            TotemofPower = new TotemofPower(raidCards.TotemofPower);
         }
 
-        public IRaidCard MoonBeam { get; set; }
-        public IRaidCard Fragmentize { get; set; }
-        public IRaidCard SkullBash { get; set; }
-        public IRaidCard RazorWind { get; set; }
-        public IRaidCard WhipofLightning { get; set; }
-        public IRaidCard ClanshipBarrage { get; set; }
-        public IRaidCard PurifyingBlast { get; set; }
-        public IRaidCard PsychicChain { get; set; }
-        public IRaidCard FlakShot { get; set; }
-        public IRaidCard CosmicHaymaker { get; set; }
-        public IRaidCard BlazingInferno { get; set; }
-        public IRaidCard AcidDrench { get; set; }
-        public IRaidCard DecayingStrike { get; set; }
-        public IRaidCard FusionBomb { get; set; }
-        public IRaidCard GrimShadow { get; set; }
-        public IRaidCard ThrivingPlague { get; set; }
-        public IRaidCard Radioactivity { get; set; }
-        public IRaidCard RavenousSwarm { get; set; }
-        public IRaidCard Maelstrom { get; set; }
-        public IRaidCard CrushingInstinct { get; set; }
-        public IRaidCard InsanityVoid { get; set; }
-        public IRaidCard RancidGas { get; set; }
-        public IRaidCard InspiringForce { get; set; }
-        public IRaidCard SoulFire { get; set; }
-        public IRaidCard VictoryMarch { get; set; }
-        public IRaidCard PrismaticRift { get; set; }
-        public IRaidCard AncestralFavor { get; set; }
-        public IRaidCard GraspingVines { get; set; }
-        public IRaidCard TotemofPower { get; set; }
+        public MoonBeam MoonBeam { get; set; }
+        public Fragmentize Fragmentize { get; set; }
+        public SkullBash SkullBash { get; set; }
+        public RazorWind RazorWind { get; set; }
+        public WhipofLightning WhipofLightning { get; set; }
+        public ClanshipBarrage ClanshipBarrage { get; set; }
+        public PurifyingBlast PurifyingBlast { get; set; }
+        public PsychicChain PsychicChain { get; set; }
+        public FlakShot FlakShot { get; set; }
+        public CosmicHaymaker CosmicHaymaker { get; set; }
+        public BlazingInferno BlazingInferno { get; set; }
+        public AcidDrench AcidDrench { get; set; }
+        public DecayingStrike DecayingStrike { get; set; }
+        public FusionBomb FusionBomb { get; set; }
+        public GrimShadow GrimShadow { get; set; }
+        public ThrivingPlague ThrivingPlague { get; set; }
+        public Radioactivity Radioactivity { get; set; }
+        public RavenousSwarm RavenousSwarm { get; set; }
+        public Maelstrom Maelstrom { get; set; }
+        public CrushingInstinct CrushingInstinct { get; set; }
+        public InsanityVoid InsanityVoid { get; set; }
+        public RancidGas RancidGas { get; set; }
+        public InspiringForce InspiringForce { get; set; }
+        public SoulFire SoulFire { get; set; }
+        public VictoryMarch VictoryMarch { get; set; }
+        public PrismaticRift PrismaticRift { get; set; }
+        public AncestralFavor AncestralFavor { get; set; }
+        public GraspingVines GraspingVines { get; set; }
+        public TotemofPower TotemofPower { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using TT2Advisor.Common.Interfaces;
+using TT2Advisor.SkillTree;
 using TT2Advisor.SkillTree.Knight;
 using TT2Advisor.SkillTree.Warlord;
 
@@ -70,50 +71,50 @@ namespace TT2Advisor.PlayerBuild
 
         }
 
-        public ISkill KnightsValor { get; set; }
-        public ISkill ChivalricOrder { get; set; }
-        public ISkill PetEvolution { get; set; }
-        public ISkill HeartofMidas { get; set; }
-        public ISkill CleavingStrike { get; set; }
-        public ISkill SummonInferno { get; set; }
-        public ISkill LightningBurst { get; set; }
-        public ISkill BarbaricFury { get; set; }
-        public ISkill VolcanicSupremacy { get; set; }
-        public ISkill FlashZip { get; set; }
+        public Skill KnightsValor { get; set; }
+        public Skill ChivalricOrder { get; set; }
+        public Skill PetEvolution { get; set; }
+        public Skill HeartofMidas { get; set; }
+        public Skill CleavingStrike { get; set; }
+        public Skill SummonInferno { get; set; }
+        public Skill LightningBurst { get; set; }
+        public Skill BarbaricFury { get; set; }
+        public Skill VolcanicSupremacy { get; set; }
+        public Skill FlashZip { get; set; }
 
-        public ISkill MasterCommander { get; set; }
-        public ISkill SpoilsofWar { get; set; }
-        public ISkill HeroicMight { get; set; }
-        public ISkill AerialAssault { get; set; }
-        public ISkill TacticalInsight { get; set; }
-        public ISkill SearingLight { get; set; }
-        public ISkill CoordinatedOffensive { get; set; }
-        public ISkill AstralAwakening { get; set; }
-        public ISkill CommandSupremacy { get; set; }
-        public ISkill AnchoringShot { get; set; }
+        public Skill MasterCommander { get; set; }
+        public Skill SpoilsofWar { get; set; }
+        public Skill HeroicMight { get; set; }
+        public Skill AerialAssault { get; set; }
+        public Skill TacticalInsight { get; set; }
+        public Skill SearingLight { get; set; }
+        public Skill CoordinatedOffensive { get; set; }
+        public Skill AstralAwakening { get; set; }
+        public Skill CommandSupremacy { get; set; }
+        public Skill AnchoringShot { get; set; }
 
-        public ISkill LimitBreak { get; set; }
-        public ISkill MidasUltimate { get; set; }
-        public ISkill AngelicRadiance { get; set; }
-        public ISkill PhantomVengeance { get; set; }
-        public ISkill FairyCharm { get; set; }
-        public ISkill ManaSiphon { get; set; }
-        public ISkill EternalDarkness { get; set; }
-        public ISkill ManniMana { get; set; }
-        public ISkill LightningStrike { get; set; }
-        public ISkill DimensionalShift { get; set; }
-        public ISkill DivineSupremacy { get; set; }
-        public ISkill PhantomSupremacy { get; set; }
+        public Skill LimitBreak { get; set; }
+        public Skill MidasUltimate { get; set; }
+        public Skill AngelicRadiance { get; set; }
+        public Skill PhantomVengeance { get; set; }
+        public Skill FairyCharm { get; set; }
+        public Skill ManaSiphon { get; set; }
+        public Skill EternalDarkness { get; set; }
+        public Skill ManniMana { get; set; }
+        public Skill LightningStrike { get; set; }
+        public Skill DimensionalShift { get; set; }
+        public Skill DivineSupremacy { get; set; }
+        public Skill PhantomSupremacy { get; set; }
 
-        public ISkill MasterThief { get; set; }
-        public ISkill Ambush { get; set; }
-        public ISkill Assassinate { get; set; }
-        public ISkill SummonDagger { get; set; }
-        public ISkill StrokeOfLuck { get; set; }
-        public ISkill DaggerStorm { get; set; }
-        public ISkill Cloaking { get; set; }
-        public ISkill ForbiddenContract { get; set; }
-        public ISkill PoisonEdge { get; set; }
-        public ISkill DeadlyFocus { get; set; }
+        public Skill MasterThief { get; set; }
+        public Skill Ambush { get; set; }
+        public Skill Assassinate { get; set; }
+        public Skill SummonDagger { get; set; }
+        public Skill StrokeOfLuck { get; set; }
+        public Skill DaggerStorm { get; set; }
+        public Skill Cloaking { get; set; }
+        public Skill ForbiddenContract { get; set; }
+        public Skill PoisonEdge { get; set; }
+        public Skill DeadlyFocus { get; set; }
     }
 }

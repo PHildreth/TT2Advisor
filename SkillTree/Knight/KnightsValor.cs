@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class KnightsValor : ISkill
+    public class KnightsValor : Skill
     {
         public KnightsValor(int level)
         {

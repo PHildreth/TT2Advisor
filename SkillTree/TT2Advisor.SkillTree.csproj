@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Compile Remove="Knight\KnightTree.cs" />
-    <Compile Remove="Skill.cs" />
     <Compile Remove="Warlord\WarlordTree.cs" />
   </ItemGroup>
 

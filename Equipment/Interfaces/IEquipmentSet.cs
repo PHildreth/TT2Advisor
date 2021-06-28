@@ -8,11 +8,11 @@
 
         static EquipmentSetClassEnum EquipmentSetClass { get; set; }
 
-        public ISword Sword { get; }
-        public IHelmet Helmet { get; }
-        public IArmor Armor { get; }
-        public IAura Aura { get; }
-        public ISlash Slash { get; }
+        Sword Sword { get; }
+        Helmet Helmet { get; }
+        Armor Armor { get; }
+        Aura Aura { get; }
+        Slash Slash { get; }
 
         public string Bonus1 { get; }
         public string Bonus1Amount { get; }

@@ -116,203 +116,204 @@ namespace TT2Advisor.PlayerBuild
         public Artifacts(Import.Artifacts artifacts)
         {
             BookofShadows = new BookofShadows(artifacts.BookofShadows);
-            ChargedCard = artifacts.ChargedCard;
-            StoneoftheValrunes = artifacts.StoneoftheValrunes;
-            ChestofContentment = artifacts.ChestofContentment;
-            HeroicShield = artifacts.HeroicShield;
-            BookofProphecy = artifacts.BookofProphecy;
-            KhrysosBowl = artifacts.KhrysosBowl;
-            ZakynthosCoin = artifacts.ZakynthosCoin;
-            GreatFayMedallion = artifacts.GreatFayMedallion;
-            NekoSculpture = artifacts.NekoSculpture;
-            CoinsofEbizu = artifacts.CoinsofEbizu;
-            TheBronzedCompass = artifacts.TheBronzedCompass;
-            EvergrowingStack = artifacts.EvergrowingStack;
-            FluteoftheSoloist = artifacts.FluteoftheSoloist;
-            HeavenlySword = artifacts.HeavenlySword;
-            DivineRetribution = artifacts.DivineRetribution;
-            DrunkenHammer = artifacts.DrunkenHammer;
-            SamosekSword = artifacts.SamosekSword;
-            TheRetaliator = artifacts.TheRetaliator;
-            StryfesPeace = artifacts.StryfesPeace;
-            HerosBlade = artifacts.HerosBlade;
-            TheSwordofStorms = artifacts.TheSwordofStorms;
-            FuriesBow = artifacts.FuriesBow;
-            CharmoftheAncient = artifacts.CharmoftheAncient;
-            TinyTitanTree = artifacts.TinyTitanTree;
-            HelmofHermes = artifacts.HelmofHermes;
-            FruitofEden = artifacts.FruitofEden;
-            InfluentialElixir = artifacts.InfluentialElixir;
-            ShimmeringOil = artifacts.ShimmeringOil;
-            ORyansCharm = artifacts.ORyansCharm;
-            HeartofStorms = artifacts.HeartofStorms;
-            ApolloOrb = artifacts.ApolloOrb;
-            StickyFruit = artifacts.StickyFruit;
-            HadesOrb = artifacts.HadesOrb;
-            EarringsofPortara = artifacts.EarringsofPortara;
-            AvianFeather = artifacts.AvianFeather;
-            CorruptedRuneHeart = artifacts.CorruptedRuneHeart;
-            DurendalSword = artifacts.DurendalSword;
-            HelheimSkull = artifacts.HelheimSkull;
-            OathsBurden = artifacts.OathsBurden;
-            CrownoftheConstellation = artifacts.CrownoftheConstellation;
-            TitaniasSceptre = artifacts.TitaniasSceptre;
-            FaginsGrip = artifacts.FaginsGrip;
-            RingofCalisto = artifacts.RingofCalisto;
-            BladeofDamocles = artifacts.BladeofDamocles;
-            HelmetofMadness = artifacts.HelmetofMadness;
-            TitaniumPlating = artifacts.TitaniumPlating;
-            MoonlightBracelet = artifacts.MoonlightBracelet;
-            AmethystStaff = artifacts.AmethystStaff;
-            SwordoftheRoyals = artifacts.SwordoftheRoyals;
-            SpearitsVigil = artifacts.SpearitsVigil;
-            TheCobaltPlate = artifacts.TheCobaltPlate;
-            SigilsofJudgement = artifacts.SigilsofJudgement;
-            FoliageoftheKeeper = artifacts.FoliageoftheKeeper;
-            InvadersGjallarhorn = artifacts.InvadersGjallarhorn;
-            TitansMask = artifacts.TitansMask;
-            RoyalToxin = artifacts.RoyalToxin;
-            LaborersPendant = artifacts.LaborersPendant;
-            BringerofRagnarok = artifacts.BringerofRagnarok;
-            ParchmentofForesight = artifacts.ParchmentofForesight;
-            ElixirofEden = artifacts.ElixirofEden;
-            HourglassoftheImpatient = artifacts.HourglassoftheImpatient;
-            PhantomTimepiece = artifacts.PhantomTimepiece;
-            ForbiddenScroll = artifacts.ForbiddenScroll;
-            RingofFealty = artifacts.RingofFealty;
-            GlacialAxe = artifacts.GlacialAxe;
-            Aegis = artifacts.Aegis;
-            SwampGauntlet = artifacts.SwampGauntlet;
-            InfinityPendulum = artifacts.InfinityPendulum;
-            GloveofKuma = artifacts.GloveofKuma;
-            TitanSpear = artifacts.TitanSpear;
-            OakStaff = artifacts.OakStaff;
-            TheArcanaCloak = artifacts.TheArcanaCloak;
-            HuntersOintment = artifacts.HuntersOintment;
-            AmbrosiaElixir = artifacts.AmbrosiaElixir;
-            MysticStaff = artifacts.MysticStaff;
-            MysticalBeansofSenzu = artifacts.MysticalBeansofSenzu;
-            EggofFortune = artifacts.EggofFortune;
-            DivineChalice = artifacts.DivineChalice;
-            InvadersShield = artifacts.InvadersShield;
-            AxeofMuerte = artifacts.AxeofMuerte;
-            EssenceoftheKitsune = artifacts.EssenceoftheKitsune;
-            BootsofHermes = artifacts.BootsofHermes;
-            UnboundGauntlet = artifacts.UnboundGauntlet;
-            OberonPendant = artifacts.OberonPendant;
-            LuckyFootofAlmiraj = artifacts.LuckyFootofAlmiraj;
-            LostKingsMask = artifacts.LostKingsMask;
-            StaffofRadiance = artifacts.StaffofRadiance;
-            MorgelaiSword = artifacts.MorgelaiSword;
-            RingingStone = artifacts.RingingStone;
-            QuillofScrolls = artifacts.QuillofScrolls;
-            OldKingsStamp = artifacts.OldKingsStamp;
-            TheMastersSword = artifacts.TheMastersSword;
-            TheMagnifier = artifacts.TheMagnifier;
-            TheTreasureofFergus = artifacts.TheTreasureofFergus;
-            TheWhiteDwarf = artifacts.TheWhiteDwarf;
-            AramSpear = artifacts.AramSpear;
-            WardoftheDarkness = artifacts.WardoftheDarkness;
-
+            ChargedCard = new ChargedCard(artifacts.ChargedCard);
+            StoneoftheValrunes = new StoneoftheValrunes(artifacts.StoneoftheValrunes);
+            ChestofContentment = new ChestofContentment(artifacts.ChestofContentment);
+            HeroicShield = new HeroicShield(artifacts.HeroicShield);
+            BookofProphecy = new BookofProphecy(artifacts.BookofProphecy);
+            KhrysosBowl = new KhrysosBowl(artifacts.KhrysosBowl);
+            ZakynthosCoin = new ZakynthosCoin(artifacts.ZakynthosCoin);
+            GreatFayMedallion = new GreatFayMedallion(artifacts.GreatFayMedallion);
+            NekoSculpture = new NekoSculpture(artifacts.NekoSculpture);
+            CoinsofEbizu = new CoinsofEbizu(artifacts.CoinsofEbizu);
+            TheBronzedCompass = new TheBronzedCompass(artifacts.TheBronzedCompass);
+            EvergrowingStack = new EvergrowingStack(artifacts.EvergrowingStack);
+            FluteoftheSoloist = new FluteoftheSoloist(artifacts.FluteoftheSoloist);
+            HeavenlySword = new HeavenlySword(artifacts.HeavenlySword);
+            DivineRetribution = new DivineRetribution(artifacts.DivineRetribution);
+            DrunkenHammer = new DrunkenHammer(artifacts.DrunkenHammer);
+            SamosekSword = new SamosekSword(artifacts.SamosekSword);
+            TheRetaliator = new TheRetaliator(artifacts.TheRetaliator);
+            StryfesPeace = new StryfesPeace(artifacts.StryfesPeace);
+            HerosBlade = new HerosBlade(artifacts.HerosBlade);
+            TheSwordofStorms = new TheSwordofStorms(artifacts.TheSwordofStorms);
+            FuriesBow = new FuriesBow(artifacts.FuriesBow);
+            CharmoftheAncient = new CharmoftheAncient(artifacts.CharmoftheAncient);
+            TinyTitanTree = new TinyTitanTree(artifacts.TinyTitanTree);
+            HelmofHermes = new HelmofHermes(artifacts.HelmofHermes);
+            FruitofEden = new FruitofEden(artifacts.FruitofEden);
+            InfluentialElixir = new InfluentialElixir(artifacts.InfluentialElixir);
+            ShimmeringOil = new ShimmeringOil(artifacts.ShimmeringOil);
+            ORyansCharm = new ORyansCharm(artifacts.ORyansCharm);
+            HeartofStorms = new HeartofStorms(artifacts.HeartofStorms);
+            ApolloOrb = new ApolloOrb(artifacts.ApolloOrb);
+            StickyFruit = new StickyFruit(artifacts.StickyFruit);
+            HadesOrb = new HadesOrb(artifacts.HadesOrb);
+            EarringsofPortara = new EarringsofPortara(artifacts.EarringsofPortara);
+            AvianFeather = new AvianFeather(artifacts.AvianFeather);
+            CorruptedRuneHeart = new CorruptedRuneHeart(artifacts.CorruptedRuneHeart);
+            DurendalSword = new DurendalSword(artifacts.DurendalSword);
+            HelheimSkull = new HelheimSkull(artifacts.HelheimSkull);
+            OathsBurden = new OathsBurden(artifacts.OathsBurden);
+            CrownoftheConstellation = new CrownoftheConstellation(artifacts.CrownoftheConstellation);
+            TitaniasSceptre = new TitaniasSceptre(artifacts.TitaniasSceptre);
+            FaginsGrip = new FaginsGrip(artifacts.FaginsGrip);
+            RingofCalisto = new RingofCalisto(artifacts.RingofCalisto);
+            BladeofDamocles = new BladeofDamocles(artifacts.BladeofDamocles);
+            HelmetofMadness = new HelmetofMadness(artifacts.HelmetofMadness);
+            TitaniumPlating = new TitaniumPlating(artifacts.TitaniumPlating);
+            MoonlightBracelet = new MoonlightBracelet(artifacts.MoonlightBracelet);
+            AmethystStaff = new AmethystStaff(artifacts.AmethystStaff);
+            SwordoftheRoyals = new SwordoftheRoyals(artifacts.SwordoftheRoyals);
+            SpearitsVigil = new SpearitsVigil(artifacts.SpearitsVigil);
+            TheCobaltPlate = new TheCobaltPlate(artifacts.TheCobaltPlate);
+            SigilsofJudgement = new SigilsofJudgement(artifacts.SigilsofJudgement);
+            FoliageoftheKeeper = new FoliageoftheKeeper(artifacts.FoliageoftheKeeper);
+            InvadersGjallarhorn = new InvadersGjallarhorn(artifacts.InvadersGjallarhorn);
+            TitansMask = new TitansMask(artifacts.TitansMask);
+            RoyalToxin = new RoyalToxin(artifacts.RoyalToxin);
+            LaborersPendant = new LaborersPendant(artifacts.LaborersPendant);
+            BringerofRagnarok = new BringerofRagnarok(artifacts.BringerofRagnarok);
+            ParchmentofForesight = new ParchmentofForesight(artifacts.ParchmentofForesight);
+            ElixirofEden = new ElixirofEden(artifacts.ElixirofEden);
+            HourglassoftheImpatient = new HourglassoftheImpatient(artifacts.HourglassoftheImpatient);
+            PhantomTimepiece = new PhantomTimepiece(artifacts.PhantomTimepiece);
+            ForbiddenScroll = new ForbiddenScroll(artifacts.ForbiddenScroll);
+            RingofFealty = new RingofFealty(artifacts.RingofFealty);
+            GlacialAxe = new GlacialAxe(artifacts.GlacialAxe);
+            Aegis = new Aegis(artifacts.Aegis);
+            SwampGauntlet = new SwampGauntlet(artifacts.SwampGauntlet);
+            InfinityPendulum = new InfinityPendulum(artifacts.InfinityPendulum);
+            GloveofKuma = new GloveofKuma(artifacts.GloveofKuma);
+            TitanSpear = new TitanSpear(artifacts.TitanSpear);
+            OakStaff = new OakStaff(artifacts.OakStaff);
+            TheArcanaCloak = new TheArcanaCloak(artifacts.TheArcanaCloak);
+            HuntersOintment = new HuntersOintment(artifacts.HuntersOintment);
+            AmbrosiaElixir = new AmbrosiaElixir(artifacts.AmbrosiaElixir);
+            MysticStaff = new MysticStaff(artifacts.MysticStaff);
+            MysticalBeansofSenzu = new MysticalBeansofSenzu(artifacts.MysticalBeansofSenzu);
+            EggofFortune = new EggofFortune(artifacts.EggofFortune);
+            DivineChalice = new DivineChalice(artifacts.DivineChalice);
+            InvadersShield = new InvadersShield(artifacts.InvadersShield);
+            AxeofMuerte = new AxeofMuerte(artifacts.AxeofMuerte);
+            EssenceoftheKitsune = new EssenceoftheKitsune(artifacts.EssenceoftheKitsune);
+            BootsofHermes = new BootsofHermes(artifacts.BootsofHermes);
+            UnboundGauntlet = new UnboundGauntlet(artifacts.UnboundGauntlet);
+            OberonPendant = new OberonPendant(artifacts.OberonPendant);
+            LuckyFootofAlmiraj = new LuckyFootofAlmiraj(artifacts.LuckyFootofAlmiraj);
+            LostKingsMask = new LostKingsMask(artifacts.LostKingsMask);
+            StaffofRadiance = new StaffofRadiance(artifacts.StaffofRadiance);
+            MorgelaiSword = new MorgelaiSword(artifacts.MorgelaiSword);
+            RingingStone = new RingingStone(artifacts.RingingStone);
+            QuillofScrolls = new QuillofScrolls(artifacts.QuillofScrolls);
+            OldKingsStamp = new OldKingsStamp(artifacts.OldKingsStamp);
+            TheMastersSword = new TheMastersSword(artifacts.TheMastersSword);
+            TheMagnifier = new TheMagnifier(artifacts.TheMagnifier);
+            TheTreasureofFergus = new TheTreasureofFergus(artifacts.TheTreasureofFergus);
+            TheWhiteDwarf = new TheWhiteDwarf(artifacts.TheWhiteDwarf);
+            AramSpear = new AramSpear(artifacts.AramSpear);
+            WardoftheDarkness = new WardoftheDarkness(artifacts.WardoftheDarkness);
         }
 
         public BookofShadows BookofShadows { get; set; }
-        public IArtifact ChargedCard { get; set; }
-        public IArtifact StoneoftheValrunes { get; set; }
-        public IArtifact ChestofContentment { get; set; }
-        public IArtifact HeroicShield { get; set; }
-        public IArtifact BookofProphecy { get; set; }
-        public IArtifact KhrysosBowl { get; set; }
-        public IArtifact ZakynthosCoin { get; set; }
-        public IArtifact GreatFayMedallion { get; set; }
-        public IArtifact NekoSculpture { get; set; }
-        public IArtifact CoinsofEbizu { get; set; }
-        public IArtifact TheBronzedCompass { get; set; }
-        public IArtifact EvergrowingStack { get; set; }
-        public IArtifact FluteoftheSoloist { get; set; }
-        public IArtifact HeavenlySword { get; set; }
-        public IArtifact DivineRetribution { get; set; }
-        public IArtifact DrunkenHammer { get; set; }
-        public IArtifact SamosekSword { get; set; }
-        public IArtifact TheRetaliator { get; set; }
-        public IArtifact StryfesPeace { get; set; }
-        public IArtifact HerosBlade { get; set; }
-        public IArtifact TheSwordofStorms { get; set; }
-        public IArtifact FuriesBow { get; set; }
-        public IArtifact CharmoftheAncient { get; set; }
-        public IArtifact TinyTitanTree { get; set; }
-        public IArtifact HelmofHermes { get; set; }
-        public IArtifact FruitofEden { get; set; }
-        public IArtifact InfluentialElixir { get; set; }
-        public IArtifact ShimmeringOil { get; set; }
-        public IArtifact ORyansCharm { get; set; }
-        public IArtifact HeartofStorms { get; set; }
-        public IArtifact ApolloOrb { get; set; }
-        public IArtifact StickyFruit { get; set; }
-        public IArtifact HadesOrb { get; set; }
-        public IArtifact EarringsofPortara { get; set; }
-        public IArtifact AvianFeather { get; set; }
-        public IArtifact CorruptedRuneHeart { get; set; }
-        public IArtifact DurendalSword { get; set; }
-        public IArtifact HelheimSkull { get; set; }
-        public IArtifact OathsBurden { get; set; }
-        public IArtifact CrownoftheConstellation { get; set; }
-        public IArtifact TitaniasSceptre { get; set; }
-        public IArtifact FaginsGrip { get; set; }
-        public IArtifact RingofCalisto { get; set; }
-        public IArtifact BladeofDamocles { get; set; }
-        public IArtifact HelmetofMadness { get; set; }
-        public IArtifact TitaniumPlating { get; set; }
-        public IArtifact MoonlightBracelet { get; set; }
-        public IArtifact AmethystStaff { get; set; }
-        public IArtifact SwordoftheRoyals { get; set; }
-        public IArtifact SpearitsVigil { get; set; }
-        public IArtifact TheCobaltPlate { get; set; }
-        public IArtifact SigilsofJudgement { get; set; }
-        public IArtifact FoliageoftheKeeper { get; set; }
-        public IArtifact InvadersGjallarhorn { get; set; }
-        public IArtifact TitansMask { get; set; }
-        public IArtifact RoyalToxin { get; set; }
-        public IArtifact LaborersPendant { get; set; }
-        public IArtifact BringerofRagnarok { get; set; }
-        public IArtifact ParchmentofForesight { get; set; }
-        public IArtifact ElixirofEden { get; set; }
-        public IArtifact HourglassoftheImpatient { get; set; }
-        public IArtifact PhantomTimepiece { get; set; }
-        public IArtifact ForbiddenScroll { get; set; }
-        public IArtifact RingofFealty { get; set; }
-        public IArtifact GlacialAxe { get; set; }
-        public IArtifact Aegis { get; set; }
-        public IArtifact SwampGauntlet { get; set; }
-        public IArtifact InfinityPendulum { get; set; }
-        public IArtifact GloveofKuma { get; set; }
-        public IArtifact TitanSpear { get; set; }
-        public IArtifact OakStaff { get; set; }
-        public IArtifact TheArcanaCloak { get; set; }
-        public IArtifact HuntersOintment { get; set; }
-        public IArtifact AmbrosiaElixir { get; set; }
-        public IArtifact MysticStaff { get; set; }
-        public IArtifact MysticalBeansofSenzu { get; set; }
-        public IArtifact EggofFortune { get; set; }
-        public IArtifact DivineChalice { get; set; }
-        public IArtifact InvadersShield { get; set; }
-        public IArtifact AxeofMuerte { get; set; }
-        public IArtifact EssenceoftheKitsune { get; set; }
-        public IArtifact BootsofHermes { get; set; }
-        public IArtifact UnboundGauntlet { get; set; }
-        public IArtifact OberonPendant { get; set; }
-        public IArtifact LuckyFootofAlmiraj { get; set; }
-        public IArtifact LostKingsMask { get; set; }
-        public IArtifact StaffofRadiance { get; set; }
-        public IArtifact MorgelaiSword { get; set; }
-        public IArtifact RingingStone { get; set; }
-        public IArtifact QuillofScrolls { get; set; }
-        public IArtifact OldKingsStamp { get; set; }
-        public IArtifact TheMastersSword { get; set; }
-        public IArtifact TheMagnifier { get; set; }
-        public IArtifact TheTreasureofFergus { get; set; }
-        public IArtifact TheWhiteDwarf { get; set; }
-        public IArtifact AramSpear { get; set; }
-        public IArtifact WardoftheDarkness { get; set; }
+        public ChargedCard ChargedCard { get; set; }
+        public StoneoftheValrunes StoneoftheValrunes { get; set; }
+        public ChestofContentment ChestofContentment { get; set; }
+        public HeroicShield HeroicShield { get; set; }
+        public BookofProphecy BookofProphecy { get; set; }
+        public KhrysosBowl KhrysosBowl { get; set; }
+        public ZakynthosCoin ZakynthosCoin { get; set; }
+        public GreatFayMedallion GreatFayMedallion { get; set; }
+        public NekoSculpture NekoSculpture { get; set; }
+        public CoinsofEbizu CoinsofEbizu { get; set; }
+        public TheBronzedCompass TheBronzedCompass { get; set; }
+        public EvergrowingStack EvergrowingStack { get; set; }
+        public FluteoftheSoloist FluteoftheSoloist { get; set; }
+        public HeavenlySword HeavenlySword { get; set; }
+        public DivineRetribution DivineRetribution { get; set; }
+        public DrunkenHammer DrunkenHammer { get; set; }
+        public SamosekSword SamosekSword { get; set; }
+        public TheRetaliator TheRetaliator { get; set; }
+        public StryfesPeace StryfesPeace { get; set; }
+        public HerosBlade HerosBlade { get; set; }
+        public TheSwordofStorms TheSwordofStorms { get; set; }
+        public FuriesBow FuriesBow { get; set; }
+        public CharmoftheAncient CharmoftheAncient { get; set; }
+        public TinyTitanTree TinyTitanTree { get; set; }
+        public HelmofHermes HelmofHermes { get; set; }
+        public FruitofEden FruitofEden { get; set; }
+        public InfluentialElixir InfluentialElixir { get; set; }
+        public ShimmeringOil ShimmeringOil { get; set; }
+        public ORyansCharm ORyansCharm { get; set; }
+        public HeartofStorms HeartofStorms { get; set; }
+        public ApolloOrb ApolloOrb { get; set; }
+        public StickyFruit StickyFruit { get; set; }
+        public HadesOrb HadesOrb { get; set; }
+        public EarringsofPortara EarringsofPortara { get; set; }
+        public AvianFeather AvianFeather { get; set; }
+        public CorruptedRuneHeart CorruptedRuneHeart { get; set; }
+        public DurendalSword DurendalSword { get; set; }
+        public HelheimSkull HelheimSkull { get; set; }
+        public OathsBurden OathsBurden { get; set; }
+        public CrownoftheConstellation CrownoftheConstellation { get; set; }
+        public TitaniasSceptre TitaniasSceptre { get; set; }
+        public FaginsGrip FaginsGrip { get; set; }
+        public RingofCalisto RingofCalisto { get; set; }
+        public BladeofDamocles BladeofDamocles { get; set; }
+        public HelmetofMadness HelmetofMadness { get; set; }
+        public TitaniumPlating TitaniumPlating { get; set; }
+        public MoonlightBracelet MoonlightBracelet { get; set; }
+        public AmethystStaff AmethystStaff { get; set; }
+        public SwordoftheRoyals SwordoftheRoyals { get; set; }
+        public SpearitsVigil SpearitsVigil { get; set; }
+        public TheCobaltPlate TheCobaltPlate { get; set; }
+        public SigilsofJudgement SigilsofJudgement { get; set; }
+        public FoliageoftheKeeper FoliageoftheKeeper { get; set; }
+        public InvadersGjallarhorn InvadersGjallarhorn { get; set; }
+        public TitansMask TitansMask { get; set; }
+        public RoyalToxin RoyalToxin { get; set; }
+        public LaborersPendant LaborersPendant { get; set; }
+        public BringerofRagnarok BringerofRagnarok { get; set; }
+        public ParchmentofForesight ParchmentofForesight { get; set; }
+        public ElixirofEden ElixirofEden { get; set; }
+        public HourglassoftheImpatient HourglassoftheImpatient { get; set; }
+        public PhantomTimepiece PhantomTimepiece { get; set; }
+        public ForbiddenScroll ForbiddenScroll { get; set; }
+        public RingofFealty RingofFealty { get; set; }
+        public GlacialAxe GlacialAxe { get; set; }
+        public Aegis Aegis { get; set; }
+        public SwampGauntlet SwampGauntlet { get; set; }
+        public InfinityPendulum InfinityPendulum { get; set; }
+        public GloveofKuma GloveofKuma { get; set; }
+        public TitanSpear TitanSpear { get; set; }
+        public OakStaff OakStaff { get; set; }
+        public TheArcanaCloak TheArcanaCloak { get; set; }
+        public HuntersOintment HuntersOintment { get; set; }
+        public AmbrosiaElixir AmbrosiaElixir { get; set; }
+        public MysticStaff MysticStaff { get; set; }
+        public MysticalBeansofSenzu MysticalBeansofSenzu { get; set; }
+        public EggofFortune EggofFortune { get; set; }
+        public DivineChalice DivineChalice { get; set; }
+        public InvadersShield InvadersShield { get; set; }
+        public AxeofMuerte AxeofMuerte { get; set; }
+        public EssenceoftheKitsune EssenceoftheKitsune { get; set; }
+        public BootsofHermes BootsofHermes { get; set; }
+        public UnboundGauntlet UnboundGauntlet { get; set; }
+        public OberonPendant OberonPendant { get; set; }
+        public LuckyFootofAlmiraj LuckyFootofAlmiraj { get; set; }
+        public LostKingsMask LostKingsMask { get; set; }
+        public StaffofRadiance StaffofRadiance { get; set; }
+        public MorgelaiSword MorgelaiSword { get; set; }
+        public RingingStone RingingStone { get; set; }
+        public QuillofScrolls QuillofScrolls { get; set; }
+        public OldKingsStamp OldKingsStamp { get; set; }
+        public TheMastersSword TheMastersSword { get; set; }
+        public TheMagnifier TheMagnifier { get; set; }
+        public TheTreasureofFergus TheTreasureofFergus { get; set; }
+        public TheWhiteDwarf TheWhiteDwarf { get; set; }
+        public AramSpear AramSpear { get; set; }
+        public WardoftheDarkness WardoftheDarkness { get; set; }
+
+
     }
 }

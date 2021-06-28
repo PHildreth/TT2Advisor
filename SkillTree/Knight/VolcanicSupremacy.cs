@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class VolcanicSupremacy : ISkill
+    public class VolcanicSupremacy : Skill
     {
         public VolcanicSupremacy(int level)
         {

@@ -2,8 +2,7 @@
 {
     public interface IEquipmentSetItem
     {
-        //static IEquipmentSetItem() { }
-        public string Name { get; set; }
-        public int Level { get; set; }
+        string Name { get; set; }
+        int Level { get; set; }
     }
 }

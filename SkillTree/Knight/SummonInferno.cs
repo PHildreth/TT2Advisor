@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class SummonInferno : ISkill
+    public class SummonInferno : Skill
     {
         public SummonInferno(int level)
         {

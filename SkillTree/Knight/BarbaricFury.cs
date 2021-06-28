@@ -6,7 +6,7 @@ using TT2Advisor.Common.Enums;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class BarbaricFury : ISkill
+    public class BarbaricFury : Skill
     {
         public BarbaricFury(int level)
         {

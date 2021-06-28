@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class PetEvolution : ISkill
+    public class PetEvolution : Skill
     {
         public PetEvolution(int level)
         {

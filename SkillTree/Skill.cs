@@ -7,11 +7,6 @@ namespace TT2Advisor.SkillTree
 {
     public class Skill : ISkill
     {
-        public Skill(int level)
-        {
-            Level = level;
-        }
-
         public string Name { get; }
 
         public string FriendlyName { get; }

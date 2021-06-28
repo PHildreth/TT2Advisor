@@ -6,7 +6,7 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree.Knight
 {
-    public class LightningBurst : ISkill
+    public class LightningBurst : Skill
     {
         public LightningBurst(int level)
         {
