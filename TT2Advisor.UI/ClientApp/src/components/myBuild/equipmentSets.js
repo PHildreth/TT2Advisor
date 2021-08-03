@@ -15,10 +15,7 @@ export class EquipmentSets extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : EquipmentSets.renderEquipmentSets(this.state.equipmentSets);
-
+        console.log(this.state.equipmentSets);
         return (
             <div>
                 <h2>Equipment Sets</h2>
@@ -32,7 +29,7 @@ export class EquipmentSets extends Component {
                     <tbody>
                         {
                             Object.keys(this.state.equipmentSets).map((key, index) => {
-                                console.log({ k: key, v: this.state.equipmentSets[key], i: index });
+                                //console.log({ k: key, v: this.state.equipmentSets[key], i: index });
 
                                 let camelKey = key.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
                                     return index === 0 ? word.toLowerCase() : word.toUpperCase();

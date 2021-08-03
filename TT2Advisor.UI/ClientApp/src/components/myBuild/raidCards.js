@@ -14,10 +14,7 @@ export class RaidCards extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : RaidCards.renderRaidCards(this.state.raidCards);
-
+        console.log(this.state.raidCards);
         return (
             <div>
                 <h2>Raid Cards</h2>
@@ -31,7 +28,7 @@ export class RaidCards extends Component {
                     <tbody>
                         {
                             Object.keys(this.state.raidCards).map((key, index) => {
-                                console.log({ k: key, v: this.state.raidCards[key], i: index });
+                                //console.log({ k: key, v: this.state.raidCards[key], i: index });
                                 return (
                                     <tr key={index}>
                                         <td>{this.state.raidCards[key].friendlyName}</td>

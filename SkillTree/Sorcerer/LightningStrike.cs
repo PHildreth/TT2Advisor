@@ -6,15 +6,15 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree
 {
-    public class ChivalricOrder : Skill
+    public class LightningStrike : Skill
     {
-        public ChivalricOrder(int level)
+        public LightningStrike(int level)
         {
             Level = level;
         }
 
-        public string Name => "ChivalricOrder";
-        public string FriendlyName => "Chivalric Order";
+        public string Name => "LightningStrike";
+        public string FriendlyName => "Lightning Strike";
         public int Tier => 2;
         public int Level { get; set; }
         public int SPCost => Level switch
@@ -47,8 +47,21 @@ namespace TT2Advisor.SkillTree
             25 => 50,
             _ => throw new NotImplementedException(),
         };
-        public DamageTypeEnum DamageType => DamageTypeEnum.TapDamageFromHeroes;
-        public double DamageAmount => Level switch
+
+        public List<BonusType> Bonuses
+        {
+            get
+            {
+                var bonii = new List<BonusType>();
+
+                var bon1 = new TapDamage(BonusAmount);
+                bonii.Add(bon1);
+
+                return bonii;
+            }
+        }
+
+        public double BonusAmount => Level switch
         {
             0 => 0,
             1 => 1.2,
@@ -78,5 +91,6 @@ namespace TT2Advisor.SkillTree
             25 => 1.19e+15,
             _ => throw new NotImplementedException(),
         };
+
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Interfaces;
 
-namespace TT2Advisor.SkillTree.Knight
+namespace TT2Advisor.SkillTree
 {
     public class KnightsValor : Skill
     {

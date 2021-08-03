@@ -14,10 +14,7 @@ export class SplashStats extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : SplashStats.renderSplashStats(this.state.splashStats);
-
+        console.log(this.state.splashStats);
         return (
             <div>
                 <h2>Splash Stats</h2>

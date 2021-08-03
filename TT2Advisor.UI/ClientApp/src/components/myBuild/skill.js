@@ -14,13 +14,8 @@ export class Skill extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : Skill.renderSkill(this.state.skill);
-
         return (
             <div>
-                <h2>Skill </h2>
                 <table className='table table-striped' aria-labelledby="tabelLabel">
                     <thead>
                         <tr>

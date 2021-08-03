@@ -1321,29 +1321,61 @@ namespace TT2Advisor.Import
         [JsonProperty("Chivalric Order")]
         public int ChivalricOrder { get; set; }
 
-        [JsonProperty("Pet Evolution")]
-        public int PetEvolution { get; set; }
+        [JsonProperty("Angelic Radiance")]
+        public int AngelicRadiance { get; set; }
 
-        [JsonProperty("Heart of Midas")]
-        public int HeartofMidas { get; set; }
+        [JsonProperty("Midas Ultimate")]
+        public int MidasUltimate { get; set; }
 
         [JsonProperty("Cleaving Strike")]
         public int CleavingStrike { get; set; }
 
-        [JsonProperty("Summon Inferno")]
-        public int SummonInferno { get; set; }
+        [JsonProperty("Rejuvenation")]
+        public int Rejuvenation { get; set; }
 
-        [JsonProperty("Lightning Burst")]
-        public int LightningBurst { get; set; }
+        [JsonProperty("Will Of Midas")]
+        public int WillOfMidas { get; set; }
 
         [JsonProperty("Barbaric Fury")]
         public int BarbaricFury { get; set; }
 
-        [JsonProperty("Volcanic Supremacy")]
-        public int VolcanicSupremacy { get; set; }
+        [JsonProperty("Divine Wrath")]
+        public int DivineWrath { get; set; }
+
+        [JsonProperty("Fairy Charm")]
+        public int FairyCharm { get; set; }
+
+
+
+        [JsonProperty("Pet Evolution")]
+        public int PetEvolution { get; set; }
+
+        [JsonProperty("Summon Inferno")]
+        public int SummonInferno { get; set; }
+
+        [JsonProperty("Heart of Midas")]
+        public int HeartofMidas { get; set; }
+
+        [JsonProperty("Companion Warfare")]
+        public int CompanionWarfare { get; set; }
+
+        [JsonProperty("Ember Arts")]
+        public int EmberArts { get; set; }
+
+        [JsonProperty("Lightning Burst")]
+        public int LightningBurst { get; set; }
+
+        [JsonProperty("Summoning Circle")]
+        public int SummoningCircle { get; set; }
+
+        [JsonProperty("Volcanic Eruption")]
+        public int VolcanicEruption { get; set; }
 
         [JsonProperty("Flash Zip")]
         public int FlashZip { get; set; }
+
+        [JsonProperty("Burning Passion")]
+        public int BurningPassion { get; set; }
 
 
 
@@ -1379,49 +1411,34 @@ namespace TT2Advisor.Import
 
 
 
-        [JsonProperty("Limit Break")]
-        public int LimitBreak { get; set; }
-
-        [JsonProperty("Midas Ultimate")]
-        public int MidasUltimate { get; set; }
-
-        [JsonProperty("Angelic Radiance")]
-        public int AngelicRadiance { get; set; }
-
         [JsonProperty("Phantom Vengeance")]
         public int PhantomVengeance { get; set; }
 
-        [JsonProperty("Fairy Charm")]
-        public int FairyCharm { get; set; }
-
-        [JsonProperty("Mana Siphon")]
-        public int ManaSiphon { get; set; }
+        [JsonProperty("Limit Break")]
+        public int LimitBreak { get; set; }
 
         [JsonProperty("Eternal Darkness")]
         public int EternalDarkness { get; set; }
 
+        [JsonProperty("Mana Siphon")]
+        public int ManaSiphon { get; set; }
+
         [JsonProperty("Manni Mana")]
         public int ManniMana { get; set; }
-
-        [JsonProperty("Lightning Strike")]
-        public int LightningStrike { get; set; }
 
         [JsonProperty("Dimensional Shift")]
         public int DimensionalShift { get; set; }
 
-        [JsonProperty("Divine Supremacy")]
-        public int DivineSupremacy { get; set; }
+        [JsonProperty("Lightning Strike")]
+        public int LightningStrike { get; set; }
 
-        [JsonProperty("Phantom Supremacy")]
-        public int PhantomSupremacy { get; set; }
+        [JsonProperty("Forbidden Contract")]
+        public int ForbiddenContract { get; set; }
 
 
 
         [JsonProperty("Master Thief")]
         public int MasterThief { get; set; }
-
-        [JsonProperty("Ambush")]
-        public int Ambush { get; set; }
 
         [JsonProperty("Assassinate")]
         public int Assassinate { get; set; }
@@ -1429,20 +1446,20 @@ namespace TT2Advisor.Import
         [JsonProperty("Summon Dagger")]
         public int SummonDagger { get; set; }
 
+        [JsonProperty("Ambush")]
+        public int Ambush { get; set; }
+
         [JsonProperty("Stroke Of Luck")]
         public int StrokeOfLuck { get; set; }
 
-        [JsonProperty("Dagger Storm")]
-        public int DaggerStorm { get; set; }
+        [JsonProperty("Poison Edge")]
+        public int PoisonEdge { get; set; }
 
         [JsonProperty("Cloaking")]
         public int Cloaking { get; set; }
 
-        [JsonProperty("Forbidden Contract")]
-        public int ForbiddenContract { get; set; }
-
-        [JsonProperty("Poison Edge")]
-        public int PoisonEdge { get; set; }
+        [JsonProperty("Dagger Storm")]
+        public int DaggerStorm { get; set; }
 
         [JsonProperty("Deadly Focus")]
         public int DeadlyFocus { get; set; }

@@ -14,10 +14,7 @@ export class PassiveSkills extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : PassiveSkills.renderPassiveSkills(this.state.passiveSkills);
-
+        console.log(this.state.passiveSkills);
         return (
             <div>
                 <h2>Passive Skills</h2>

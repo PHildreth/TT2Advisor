@@ -14,10 +14,7 @@ export class RaidStats extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : RaidStats.renderRaidStats(this.state.raidStats);
-
+        console.log(this.state.raidStats);
         return (
             <div>
                 <h2>Raid Stats</h2>

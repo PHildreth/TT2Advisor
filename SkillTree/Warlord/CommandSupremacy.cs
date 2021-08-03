@@ -6,16 +6,16 @@ using TT2Advisor.Common.Interfaces;
 
 namespace TT2Advisor.SkillTree
 {
-    public class ChivalricOrder : Skill
+    public class CommandSupremacy : Skill
     {
-        public ChivalricOrder(int level)
+        public CommandSupremacy(int level)
         {
             Level = level;
         }
 
-        public string Name => "ChivalricOrder";
-        public string FriendlyName => "Chivalric Order";
-        public int Tier => 2;
+        public string Name => "CommandSupremacy";
+        public string FriendlyName => "Command Supremacy";
+        public int Tier => 4;
         public int Level { get; set; }
         public int SPCost => Level switch
         {
@@ -47,7 +47,7 @@ namespace TT2Advisor.SkillTree
             25 => 50,
             _ => throw new NotImplementedException(),
         };
-        public DamageTypeEnum DamageType => DamageTypeEnum.TapDamageFromHeroes;
+        public DamageTypeEnum DamageType => DamageTypeEnum.AllHeroDamage;
         public double DamageAmount => Level switch
         {
             0 => 0,

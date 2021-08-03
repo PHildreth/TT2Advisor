@@ -14,6 +14,5 @@ namespace TT2Advisor.Common.Interfaces
         int SPCost { get; }
         //public DamageTypeEnum DamageType { get; }
         //public double DamageAmount { get; }
-
     }
 }

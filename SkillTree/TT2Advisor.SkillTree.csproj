@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Equipment\TT2Advisor.Equipment.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Skillz\" />
+  </ItemGroup>
+
 </Project>

@@ -4,17 +4,17 @@ using System.Text;
 using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Interfaces;
 
-namespace TT2Advisor.SkillTree.Knight
+namespace TT2Advisor.SkillTree
 {
-    public class LightningBurst : Skill
+    public class DaggerStorm : Skill
     {
-        public LightningBurst(int level)
+        public DaggerStorm(int level)
         {
             Level = level;
         }
 
-        public string Name => "LightningBurst";
-        public string FriendlyName => "Lightning Burst";
+        public string Name => "DaggerStorm";
+        public string FriendlyName => "Dagger Storm";
         public int Tier => 2;
         public int Level { get; set; }
         public int SPCost => Level switch
@@ -47,8 +47,21 @@ namespace TT2Advisor.SkillTree.Knight
             25 => 50,
             _ => throw new NotImplementedException(),
         };
-        public DamageTypeEnum DamageType => DamageTypeEnum.TapDamage;
-        public double DamageAmount => Level switch
+
+        public List<BonusType> Bonuses
+        {
+            get
+            {
+                var bonii = new List<BonusType>();
+
+                var bon1 = new TapDamage(BonusAmount);
+                bonii.Add(bon1);
+
+                return bonii;
+            }
+        }
+
+        public double BonusAmount => Level switch
         {
             0 => 0,
             1 => 1.2,
@@ -78,5 +91,6 @@ namespace TT2Advisor.SkillTree.Knight
             25 => 1.19e+15,
             _ => throw new NotImplementedException(),
         };
+
     }
 }

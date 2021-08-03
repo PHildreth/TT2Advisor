@@ -14,10 +14,7 @@ export class PlayerStats extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : PlayerStats.renderPlayerStats(this.state.playerStats);
-
+        console.log(this.state.playerStats);
         return (
             <div>
                 <h2>Player Stats</h2>

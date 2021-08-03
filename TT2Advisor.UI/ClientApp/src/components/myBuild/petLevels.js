@@ -14,10 +14,7 @@ export class PetLevels extends Component {
     }
 
     render() {
-        let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
-            : PetLevels.renderPetLevels(this.state.petLevels);
-
+        console.log(this.state.petLevels);
         return (
             <div>
                 <h2>Pet Levels</h2>
@@ -31,7 +28,7 @@ export class PetLevels extends Component {
                     <tbody>
                         {
                             Object.keys(this.state.petLevels).map((key, index) => {
-                                console.log({ k: key, v: this.state.petLevels[key], i: index });
+                                //console.log({ k: key, v: this.state.petLevels[key], i: index });
                                 return (
                                     <tr key={index}>
                                         <td>{this.state.petLevels[key].name}</td>

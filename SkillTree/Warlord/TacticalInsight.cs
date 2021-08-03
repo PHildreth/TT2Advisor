@@ -4,18 +4,18 @@ using System.Text;
 using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Interfaces;
 
-namespace TT2Advisor.SkillTree.Knight
+namespace TT2Advisor.SkillTree
 {
-    public class PetEvolution : Skill
+    public class TacticalInsight : Skill
     {
-        public PetEvolution(int level)
+        public TacticalInsight(int level)
         {
             Level = level;
         }
 
-        public string Name => "PetEvolution";
-        public string FriendlyName => "Pet Evolution";
-        public int Tier => 2;
+        public string Name => "TacticalInsight";
+        public string FriendlyName => "Tactical Insight";
+        public int Tier => 3;
         public int Level { get; set; }
         public int SPCost => Level switch
         {
@@ -47,7 +47,7 @@ namespace TT2Advisor.SkillTree.Knight
             25 => 50,
             _ => throw new NotImplementedException(),
         };
-        public DamageTypeEnum DamageType => DamageTypeEnum.PetDamage;
+        public DamageTypeEnum DamageType => DamageTypeEnum.AllHeroDamage;
         public double DamageAmount => Level switch
         {
             0 => 0,

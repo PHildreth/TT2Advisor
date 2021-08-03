@@ -4,17 +4,17 @@ using System.Text;
 using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Interfaces;
 
-namespace TT2Advisor.SkillTree.Knight
+namespace TT2Advisor.SkillTree
 {
-    public class VolcanicSupremacy : Skill
+    public class EmberArts : Skill
     {
-        public VolcanicSupremacy(int level)
+        public EmberArts(int level)
         {
             Level = level;
         }
 
-        public string Name => "VolcanicSupremacy";
-        public string FriendlyName => "Volcanic Supremacy";
+        public string Name => "EmberArts";
+        public string FriendlyName => "Ember Arts";
         public int Tier => 2;
         public int Level { get; set; }
         public int SPCost => Level switch
@@ -47,7 +47,7 @@ namespace TT2Advisor.SkillTree.Knight
             25 => 50,
             _ => throw new NotImplementedException(),
         };
-        public DamageTypeEnum DamageType => DamageTypeEnum.TapDamage;
+        public GoldSourceTypeEnum GoldSourceType => GoldSourceTypeEnum.BossGold;
         public double DamageAmount => Level switch
         {
             0 => 0,

@@ -4,17 +4,17 @@ using System.Text;
 using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Interfaces;
 
-namespace TT2Advisor.SkillTree.Knight
+namespace TT2Advisor.SkillTree
 {
-    public class FlashZip : Skill
+    public class HeroicMight : Skill
     {
-        public FlashZip(int level)
+        public HeroicMight(int level)
         {
             Level = level;
         }
 
-        public string Name => "FlashZip";
-        public string FriendlyName => "Flash Zip";
+        public string Name => "HeroicMight";
+        public string FriendlyName => "Heroic Might";
         public int Tier => 2;
         public int Level { get; set; }
         public int SPCost => Level switch
@@ -47,8 +47,8 @@ namespace TT2Advisor.SkillTree.Knight
             25 => 50,
             _ => throw new NotImplementedException(),
         };
-        public DamageTypeEnum DamageType => DamageTypeEnum.TapDamage;
-        public double DamageAmount => Level switch
+        public GoldSourceTypeEnum GoldSourceType => GoldSourceTypeEnum.ChestersonGold;
+        public double ChestersonGold => Level switch
         {
             0 => 0,
             1 => 1.2,

@@ -4,7 +4,7 @@ using System.Text;
 using TT2Advisor.Common.Enums;
 using TT2Advisor.Common.Interfaces;
 
-namespace TT2Advisor.SkillTree.Warlord
+namespace TT2Advisor.SkillTree
 {
     public class SpoilsofWar : Skill
     {

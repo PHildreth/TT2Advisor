@@ -4,7 +4,7 @@ using System.Text;
 using TT2Advisor.Common.Interfaces;
 using TT2Advisor.Common.Enums;
 
-namespace TT2Advisor.SkillTree.Knight
+namespace TT2Advisor.SkillTree
 {
     public class BarbaricFury : Skill
     {
@@ -15,7 +15,7 @@ namespace TT2Advisor.SkillTree.Knight
 
         public string Name => "BarbaricFury";
         public string FriendlyName => "Barbaric Fury";
-        public int Tier => 2;
+        public int Tier => 4;
         public int Level { get; set; }
         public int SPCost => Level switch
         {
